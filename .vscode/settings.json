@@ -6,6 +6,9 @@
     "[typescript]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
     },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
     "[json]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
     }

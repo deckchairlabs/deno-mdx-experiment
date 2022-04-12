@@ -1,7 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run -A --unstable --no-check main.ts",
-    "cache": "deno cache --reload deps.ts"
+    "dev": "deno run -A --unstable --no-check --watch server.tsx"
   },
   "importMap": "./importMap.json"
 }
