@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run -A --unstable --no-check --watch server.tsx"
+    "dev": "deno run --unstable --allow-read --allow-net --no-check --watch server.tsx"
   },
   "importMap": "./importMap.json"
 }
