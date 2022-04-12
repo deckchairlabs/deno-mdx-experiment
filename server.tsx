@@ -3,13 +3,12 @@ import { run } from "@mdx-js/mdx";
 import ReactDOMServer from "react-dom/server";
 import { serve } from "https://deno.land/std@0.134.0/http/server.ts";
 import * as runtime from "react/jsx-runtime";
+import Content from "./mdx.tsx?file=./content/docs.mdx";
 
 const port = 8080;
 
 const handler = async (request: Request): Promise<Response> => {
   const controller = new AbortController();
-  const Content = await (await import("./mdx.tsx?file=./content/docs.mdx"))
-    .default;
   const { default: Component } = await run(Content, runtime);
 
   //@ts-ignore whatever
