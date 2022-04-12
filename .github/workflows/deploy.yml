@@ -20,3 +20,4 @@ jobs:
         with:
           project: "dead-crab-67"
           entrypoint: "./server.tsx"
+          import-map: "./importMap.json"
