@@ -3,7 +3,7 @@ import { run } from "@mdx-js/mdx";
 import { renderToString } from "react-dom/server";
 import { serve } from "https://deno.land/std@0.134.0/http/server.ts";
 import * as runtime from "react/jsx-runtime";
-import Content from "./mdx.tsx?foo=bar";
+import Content from "./mdx.tsx?file=./content/docs.mdx";
 
 const port = 8080;
 

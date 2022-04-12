@@ -1,8 +1,13 @@
 import { compile } from "@mdx-js/mdx";
 
-console.log(import.meta);
+const url = new URL(import.meta.url);
+const file = url.searchParams.get("file");
 
-const markdownSource = await Deno.readTextFile("./content/docs.mdx");
+if (!file) {
+  throw new Error("No file specified!");
+}
+
+const markdownSource = await Deno.readTextFile(file);
 
 export default String(
   await compile(markdownSource, { outputFormat: "function-body" }),
