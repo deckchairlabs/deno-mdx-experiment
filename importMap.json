@@ -1,8 +1,10 @@
 {
   "imports": {
-    "react": "https://esm.sh/react@18?dev",
-    "react-dom/server": "https://esm.sh/react-dom@18/server?dev",
-    "react/jsx-runtime": "https://esm.sh/react/jsx-runtime.js",
-    "@mdx-js/mdx": "https://esm.sh/@mdx-js/mdx?no-check"
+    "react": "https://esm.sh/react@18.0.0?dev&no-check",
+    "react/jsx-runtime": "https://esm.sh/react@18.0.0/jsx-runtime.js",
+    "react-dom/server": "https://esm.sh/react-dom@18.0.0/server?dev&no-check",
+    "@mdx-js/mdx": "https://esm.sh/@mdx-js/mdx?no-check",
+    "rehype-highlight": "https://esm.sh/rehype-highlight?no-check",
+    "react-syntax-highlighter": "https://esm.sh/react-syntax-highlighter?no-check"
   }
 }
